@@ -43,6 +43,14 @@ const getPopular = async () => {
       options={{
         perPage: 4,
         arrows: false,
+        breakpoints: {
+          768: {
+            perPage: 1, // Adjust number of slides for smaller screens
+          },
+          1024: {
+            perPage: 2, // Adjust for tablets
+          },
+        }
       }}>
       {popular.map((item,index)=>{
         return(

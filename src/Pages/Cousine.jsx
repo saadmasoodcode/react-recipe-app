@@ -36,9 +36,9 @@ function Cousine() {
       {cousine.map((item)=>{
         return(
 
-          <div className="flex flex-col flex-wrap max-w-72">
+          <div className="flex flex-col flex-wrap max-w-72 items-center">
             <img src={item.image} alt={item.title} className="rounded-lg"/>
-            <p className="mt-5">{item.title}</p>
+            <p className="mt-5 text-center">{item.title}</p>
           </div>
         )
       })}

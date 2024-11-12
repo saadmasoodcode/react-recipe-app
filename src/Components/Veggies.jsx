@@ -43,6 +43,14 @@ const getVeggies = async () => {
       options={{
         perPage: 3,
         arrows: false,
+        breakpoints: {
+          768: {
+            perPage: 1, // Adjust number of slides for smaller screens
+          },
+          1024: {
+            perPage: 2, // Adjust for tablets
+          },
+        }
       }}>
       {veggies.map((item,index)=>{
         return(
