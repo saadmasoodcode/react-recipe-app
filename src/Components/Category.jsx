@@ -9,7 +9,7 @@ import {NavLink} from "react-router-dom"
 
 function Category() {
   return (
-    <div className="flex justify-center py-10 gap-10">
+    <div className="flex justify-center py-10 px-3 gap-5">
       <NavLink to="/react-recipe-app/cousine/italian" className="flex items-center flex-col bg-black rounded-full w-20 justify-center text-white py-5 cursor-pointer">
         <FaPizzaSlice/>
         <h6 className="text-xs mt-1">Italian</h6>

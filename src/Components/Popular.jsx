@@ -37,14 +37,14 @@ const getPopular = async () => {
 };
 
   return (
-    <div className='px-32'>
+    <div className='px-1/3'>
       <h2 className="font-bold mb-5	ml-10">Popular Picks</h2>
       <Splide className=''
       options={{
         perPage: 4,
         arrows: false,
         breakpoints: {
-          768: {
+          612: {
             perPage: 1, // Adjust number of slides for smaller screens
           },
           1024: {
