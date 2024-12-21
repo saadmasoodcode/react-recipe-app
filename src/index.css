@@ -8,3 +8,7 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+
+.splide__pagination__page.is-active {
+  @apply bg-black; /* Apply Tailwind's bg-black utility */
+}

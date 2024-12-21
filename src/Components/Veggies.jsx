@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/css';
+import { Link } from "react-router-dom";
 
 function Veggies() {
 
@@ -55,10 +56,12 @@ const getVeggies = async () => {
       {veggies.map((item,index)=>{
         return(
           <SplideSlide key={item.id}>
+            <Link to={'/react-recipe-app/detail/' + item.id}>
           <div className="rounded-full p-5 w-full	" >
             <img src={item.image} alt={item.title} className="rounded-full bg-center"/>
             <h2 className="mt-3 mb-3 text-center">{item.title}</h2>
           </div>
+            </Link>
           </SplideSlide>
         )
       })}
