@@ -11,7 +11,7 @@ function Category() {
       <NavLink
         to="/react-recipe-app/cousine/italian"
         className={({ isActive }) =>
-          `flex items-center flex-col bg-black rounded-full w-20 justify-center text-white py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : ''}`
+          `flex items-center flex-col bg-black rounded-full w-20 justify-center  py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : 'text-white'}`
         }
       >
         <FaPizzaSlice />
@@ -20,7 +20,7 @@ function Category() {
       <NavLink
         to="/react-recipe-app/cousine/american"
         className={({ isActive }) =>
-          `flex items-center flex-col bg-black rounded-full w-20 justify-center text-white py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : ''}`
+          `flex items-center flex-col bg-black rounded-full w-20 justify-center  py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : 'text-white'}`
         }
       >
         <PiHamburgerFill />
@@ -29,7 +29,7 @@ function Category() {
       <NavLink
         to="/react-recipe-app/cousine/thai"
         className={({ isActive }) =>
-          `flex items-center flex-col bg-black rounded-full w-20 justify-center text-white py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : ''}`
+          `flex items-center flex-col bg-black rounded-full w-20 justify-center  py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : 'text-white'}`
         }
       >
         <GiNoodles />
@@ -38,7 +38,7 @@ function Category() {
       <NavLink
         to="/react-recipe-app/cousine/japanese"
         className={({ isActive }) =>
-          `flex items-center flex-col bg-black rounded-full w-20 justify-center text-white py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : ''}`
+          `flex items-center flex-col bg-black rounded-full w-20 justify-center  py-5 cursor-pointer ${isActive ? 'bg-cyan-200 text-black' : 'text-white'}`
         }
       >
         <GiChopsticks />
